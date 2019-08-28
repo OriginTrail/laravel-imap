@@ -666,7 +666,7 @@ class Message {
                 ($structure->ifdisposition == 1 && !isset($structure->parts) && $partNumber != null)
             )
         ) {
-            if (strtolower($structure->subtype) == "plain" || strtolower($structure->subtype) == "csv") {
+            if (strtolower($structure->subtype) == "plain" || strtolower($structure->subtype) == "csv" || strtolower($structure->subtype) == "xml") {
                 if (!$partNumber) {
                     $partNumber = 1;
                 }
